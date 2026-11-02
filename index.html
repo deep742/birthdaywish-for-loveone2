@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f7">
+  <title>For Rima, My Baby ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="particle-layer" id="particleLayer" aria-hidden="true"></div>
+
+  <!-- PASSWORD: RIMA -->
+  <section class="gate screen" id="lockScreen">
+    <div class="gate-card">
+      <div class="moon">☾</div>
+      <p class="eyebrow">A LITTLE UNIVERSE, MADE JUST FOR YOU</p>
+      <h1>For you, Baby</h1>
+      <p class="gate-copy">Some surprises are wrapped in stars, memories and a little bit of love.</p>
+      <label class="sr-only" for="password">Secret password</label>
+      <input id="password" type="password" placeholder="Enter your secret word" autocomplete="off">
+      <button class="pill-button" id="unlockButton">Unlock your surprise <span>♡</span></button>
+      <p class="error" id="error" aria-live="polite"></p>
+      <span class="hint">Hint: your beautiful name</span>
+    </div>
+    <span class="gate-star star-one">✦</span><span class="gate-star star-two">✧</span>
+  </section>
+
+  <!-- OPENING ENVELOPE -->
+  <section class="intro screen hidden" id="introScreen">
+    <div class="intro-inner">
+      <p class="eyebrow">A MESSAGE FROM MY HEART</p>
+      <h1>Hey, Rima...</h1>
+      <p class="intro-copy">I made a little universe for you, Baby.</p>
+      <button class="envelope-button" id="openEnvelope" aria-label="Open your birthday letter">
+        <span class="envelope">
+          <span class="envelope-flap"></span>
+          <span class="envelope-heart">♡</span>
+          <span class="envelope-letter">For my favourite girl</span>
+        </span>
+        <span class="tap-note">Tap the envelope to open your surprise</span>
+      </button>
+    </div>
+  </section>
+
+  <main id="mainWebsite" class="hidden">
+    <nav class="nav">
+      <a href="#home" class="brand">R <span>♡</span></a>
+      <div class="nav-links">
+        <a href="#memories">Memories</a>
+        <a href="#our-story">Our story</a>
+        <a href="#letter">Letter</a>
+      </div>
+      <button class="music-button" id="musicButton" aria-label="Play music" title="Play / pause music">♫</button>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+      <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✧</span>
+      <div class="hero-content">
+        <p class="eyebrow">DECEMBER 10 · YOUR SPECIAL DAY</p>
+        <h2>Happy Birthday,<br><em>Rima</em></h2>
+        <p class="hero-text">To the girl who makes ordinary days feel magical. This little universe belongs to you, Baby.</p>
+        <a href="#memories" class="pill-button">Step into our memories <span>↓</span></a>
+        <div class="scroll-cue"><span></span> scroll to explore</div>
+      </div>
+      <div class="hero-note">a thousand little reasons to celebrate you ♡</div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+        <h2>Our beautiful <em>memories</em></h2>
+        <p>Every picture holds a little piece of my heart.</p>
+      </div>
+      <div class="gallery">
+        <button class="photo-card reveal" data-photo="photos/photo1.jpg" data-caption="My favourite moment ♡"><img src="photos/photo1.jpg" alt="Our memory one"><span>My favourite moment ♡</span></button>
+        <button class="photo-card reveal" data-photo="photos/photo2.jpg" data-caption="Just you and me"><img src="photos/photo2.jpg" alt="Our memory two"><span>Just you and me</span></button>
+        <button class="photo-card reveal" data-photo="photos/photo3.jpg" data-caption="Forever special"><img src="photos/photo3.jpg" alt="Our memory three"><span>Forever special</span></button>
+        <button class="photo-card reveal" data-photo="photos/photo4.jpg" data-caption="A beautiful memory"><img src="photos/photo4.jpg" alt="Our memory four"><span>A beautiful memory</span></button>
+        <button class="photo-card reveal" data-photo="photos/photo5.jpg" data-caption="My happy place"><img src="photos/photo5.jpg" alt="Our memory five"><span>My happy place</span></button>
+        <button class="photo-card reveal" data-photo="photos/photo6.jpg" data-caption="Us, always ♡"><img src="photos/photo6.jpg" alt="Our memory six"><span>Us, always ♡</span></button>
+      </div>
+      <p class="gallery-tip">Tap any photo to see it a little closer ✨</p>
+    </section>
+
+    <section class="section story-section" id="our-story">
+      <div class="section-heading reveal">
+        <p class="eyebrow">WRITTEN IN THE STARS</p>
+        <h2>A little bit of <em>our story</em></h2>
+        <p>Not just moments. Little pieces of forever.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="timeline-icon">✧</span><div><small>CHAPTER ONE</small><h3>The beginning</h3><p>The day our story started becoming something special. A beginning I'll always be grateful for.</p></div></article>
+        <article class="timeline-item reveal"><span class="timeline-icon">♡</span><div><small>CHAPTER TWO</small><h3>Little things, big memories</h3><p>Every laugh, every conversation, every silly moment — somehow, they all became my favourites.</p></div></article>
+        <article class="timeline-item reveal"><span class="timeline-icon">∞</span><div><small>CHAPTER THREE</small><h3>Still choosing you</h3><p>Here's to more adventures, more memories and all the beautiful things still waiting for us.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-heading reveal">
+        <p class="eyebrow">SOMETHING I WANT YOU TO KNOW</p>
+        <h2>A letter for <em>Baby</em></h2>
+        <p>A few words, from a heart that cares about you.</p>
+      </div>
+      <button class="letter-wrap reveal" id="letterToggle" aria-expanded="false">
+        <span class="letter-seal">♡</span>
+        <span class="letter-cover-title">Open when you're ready</span>
+        <span class="letter-cover-sub">A little letter, just for you</span>
+        <span class="letter-open-hint">Tap to open ✧</span>
+      </button>
+      <article class="letter-paper hidden" id="letterPaper">
+        <p class="letter-dear">My dearest Rima,</p>
+        <p>Happy Birthday, Baby! ❤️</p>
+        <p>I don't know if words will ever be enough to explain how special you are to me. Your smile can make an ordinary day feel brighter, and even the smallest moments with you become memories I want to keep close.</p>
+        <p>I hope this new year of your life brings you endless happiness, confidence, beautiful surprises and every dream your heart is quietly wishing for. You deserve kindness, peace and all the good things this world can offer.</p>
+        <p>Thank you for being you. Here's to more laughs, more adventures and a million more memories together.</p>
+        <p class="letter-sign">With all my love,<br><span>your person ♡</span></p>
+      </article>
+    </section>
+
+    <section class="section cake-section" id="wish">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MAKE A WISH, BABY</p>
+        <h2>One wish, a thousand <em>dreams</em></h2>
+        <p>Close your eyes, make a wish and let the magic begin.</p>
+      </div>
+      <div class="cake-scene reveal">
+        <div class="cake-sparkles">✦　✧　✦</div>
+        <div class="cake">
+          <div class="candle"><div class="flame" id="flame"></div></div>
+          <div class="icing"></div><div class="cake-top"></div>
+          <div class="cake-body"><i></i><i></i><i></i></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <p class="wish-message" id="wishMessage" aria-live="polite">Your wish is waiting among the stars ✨</p>
+      <button class="pill-button" id="blowButton">Blow the candles ♡</button>
+    </section>
+
+    <section class="section final-section" id="final">
+      <div class="final-stars">✦　✧　⋆　✧　✦</div>
+      <div class="final-heart">♡</div>
+      <p class="eyebrow">TO MY FAVOURITE PERSON</p>
+      <h2>Happy Birthday,<br><em>My Baby Rima!</em></h2>
+      <p>No matter how many birthdays come and go, you will always be one of my favourite reasons to smile.</p>
+      <button class="pill-button" id="finalSurprise">One more little surprise ✨</button>
+      <p class="final-signature">Made with love, just for you.</p>
+    </section>
+
+    <footer>For Rima, with love ♡ · December 10, 2026</footer>
+  </main>
+
+  <div class="lightbox hidden" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo">×</button>
+    <img id="lightboxImage" src="" alt="Selected memory">
+    <p id="lightboxCaption"></p>
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="music/love-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="toast hidden" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
